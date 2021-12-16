@@ -3,11 +3,9 @@
 include_once 'functions.php';
 $array = [
   'Home'=>'index.php',
-  'Skills'=>'skills.php',
-  'Opdrachten'=>'opdrachten.php',
-  'Contact'=>'contact.php',
-  'About'=>'about.php',
-  'Admin'=>'Admin.php',
+  'producten'=>'producten.php',
+  'over ons'=>'overons.php',
+  'contact'=>'contact.php',
 ];
 
 echo createlist($array, 'navbar');

@@ -9,7 +9,7 @@ body {
 /* Style the header */
 header {
   background-color: #666;
-  padding-top: 2em;
+  padding-top: 1em;
   text-align: center;
   font-size: 35px;
   color: white;
@@ -53,14 +53,6 @@ footer {
   color: white;
 }
 
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
 ul{
   list-style-type:none;
   margin:0;
@@ -95,47 +87,21 @@ ul{
   background-color:#111111;
 }
 
-.yes{
-  border-radius: 0.3rem;
-  padding: 1em;
-  background-color: orange;
-}
+.logo {
+  font-weight: 400;
+  margin: 0px;
+  position: fixed;
+  top:8px; 
+  left:8px; 
+  width:200px;
+  height:120px;
+  }
 
-* {box-sizing: border-box}
-
-/* voor de skills */
-.container {
-  width: 100%;
-  background-color: #ddd;
+.winkel {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top:0; 
+  right:0; 
 }
-
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-/* voor de tabel */
-tr:nth-child(1) {
-  background-color: #d6eeed;
-  font-weight: bold;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 25%;
-  display: inline-block;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.containercard {
-  padding: 4px 18px;
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-}
+/*<img src="./media/Winkelmandje.webp" class="winkel"/>
