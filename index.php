@@ -1,5 +1,4 @@
-<?php include 'header.php' ?>
-<?php include 'sidebar.php' ?>   
+<?php include 'header.php' ?>  
    <article>
         <p> dit is de home pagina </p>
     </article>
