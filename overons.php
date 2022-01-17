@@ -1,8 +1,8 @@
 <?php include 'header.php' ?>
 <?php include 'sidebar.php' ?>   
    <article>
-        <p>wie wij zijn, wij zijn software developers die samen een website bouwen.
-        Waarom wij hiermee begonnen zijn we kregen een opdracht van de opdrachtgever om een website te bouwen.
+        <p>hardstore is een online bedrijf die we hebben aangemaakt om electronika te verkopen.
+        Waarom wij hiermee begonnen zijn we zijn hiermee begonnen om klanten blij te maken.
      </p>
     </article>
 <?php include 'footer.php'?>

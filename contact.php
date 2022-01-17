@@ -45,26 +45,60 @@ input[type=submit]:hover {
 <h3>Formulier</h3>
 
 <div class="container">
-  <form action="/action_page.php">
+  <form action="" method="post">
     <label for="fname">Naam</label>
-    <input type="text" id="fname" name="firstname" placeholder="jouw naam..">
+    <input type="text" id="fname" name="naam" placeholder="jouw naam..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="jouw achter naam..">
+    <label for="lname">achternaam</label>
+    <input type="text" id="lname" name="achternaam" placeholder="jouw achter naam..">
 
-    <label for="country">Land</label>
-    <select id="country" name="country">
-      <option value="australia">Nederland</option>
-      <option value="canada">België</option>
-      <option value="usa">Duitsland</option>
+    <label for="land">Land</label>
+    <select id="land" name="land">
+      <option value="Nederland">Nederland</option>
+      <option value="België">België</option>
+      <option value="Duitsland">Duitsland</option>
     </select>
 
-    <label for="subject">commentaar</label>
-    <textarea id="subject" name="subject" placeholder="Typ hier je mening in.." style="height:200px"></textarea>
+    <label for="commentaar">commentaar</label>
+    <textarea id="commentaar" name="commentaar" placeholder="Typ hier je mening in.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
 </div>
+
+<?php
+$naam = $_POST['naam'];
+if (empty($naam)) {
+    echo "<br>naam niet ingevuld";
+} else {
+     echo  "<br>naam: $naam";
+}
+
+$achternaam = $_POST['achternaam'];
+if (empty($achternaam)) {
+    echo "<br>achternaam niet ingevuld";
+} else {
+     echo  "<br>achternaam: $achternaam";
+}
+
+$land = $_POST['land'];
+if (empty($land)) {
+    echo "<br>land niet ingevuld";
+} else {
+     echo  "<br>land: $land";
+}
+
+$commentaar = $_POST["commentaar"];
+if (empty($commentaar)) {
+    echo "<br>commentaar niet ingevuld";
+} else {
+     echo  "<br>commentaar: $commentaar";
+}
+
+
+
+?>
+
 
 </body>
 </html>
