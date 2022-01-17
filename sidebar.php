@@ -9,4 +9,4 @@
     ];
     echo createlist($subnav, '')
     ?>
-    </nav>
+  </nav>
