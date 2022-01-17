@@ -1,43 +1,41 @@
-<?php
+<?php 
+session_start();
 
-if (isset($_POST["submit"])){
-$name = $_POST["name"];
-$email = $_POST["email"];
-$password = $_POST["password"];
-$repeatPassword = $_POST["repeatpassword"];
-$gender = $_POST["gender"];
-$about = $_POST["about"];
+	
+	include("config.php");
+	include("functions.php");
+	
 
-require_once 'config.php';
-require_once 'functions.php';
-if(emptyInputSignup($name, $email, $password, $repeatPassword, $gender) !== false) {
-    header("location: ../registreren.php?error=emptyinput");
-    exit();
 
-}
-if(invaldName($name) !== false) {
-    header("location: ../registreren.php?error=emptyname");
-    exit();
+	if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		
+		$name = $_POST['name'];
+        $email = $_POST['email'];
+		$password = $_POST['password'];
+		$herhaalwachtwoord = $_POST['repeatpassword'];
 
-}
-if(invalidEmail($email) !== false) {
-    header("location: ../registreren.php?error=emptyemail");
-    exit();
+		if ($_POST["password"] === $_POST["repeatpassword"]) {
+			//gelukt
+		 }
+		 else {
+			echo "Het wachtwoord komt niet overeen<br>";
+		 }
 
-}
-if(pwdMatch($password, $repeatPassword) !== false) {
-    header("location: ../registreren.php?error=passwordsdontmatch");
-    exit();
+		if(!empty($user_name) && !empty($password) && !is_numeric($name))
+		{
 
-}
-if(invalidGender($gender) !== false) {
-    header("location: ../registreren.php?error=emptygender");
-    exit();
+			//save naar db
+			$user_id = random_num(20);
+			$query = "insert into users (user_id,user_name,password,email,repeatpassword) values ('$user_id','$user_name','$password','$email','$repeatpassword')";
 
-}
-    createUser($dsn, $name, $email, $password, $gender);
-}
-else{
-    header("location: ../registreren.php");
-}
+			mysqli_query($con, $query);
+
+			header("Location: inloggen.php");
+			die;
+		}else
+		{
+			echo "Niet ingevuld of gegevens bestaan niet of gegevens al gebruikt";
+		}
+	}
 ?>
