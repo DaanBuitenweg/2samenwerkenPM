@@ -1,5 +1,4 @@
-<?php include 'header.php' ?>
-<?php include 'sidebar.php' ?>   
+<?php include 'header.php' ?> 
    <article>
         <p> als jullie contact willen opnemen met ons kunt u bellen of een mail sturen naar ons. </p>
         <html>
