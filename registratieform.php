@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hardstore/registreren</title>
 </head>
 <body>
 <div class="container">
   <h1>Registreren</h1>
-  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+  <form name="registration" class="registartion-form" action= "registreren.php" action= "inloggen.php" method= "POST">
     <table>
       <tr>
         <td><label for="name">Naam:</label></td>
@@ -26,14 +26,14 @@
       </tr>
       <tr>
         <td><label for="password">Herhaal Wachtwoord:</label></td>
-        <td><input type="password" name="password" id="Repeatpassword"></td>
+        <td><input type="password" name="repeatpassword" id="repeatpassword"></td>
       </tr>
-      <tr>
-        <td><label for="gender">Geslacht:</label></td>
-        <td>Male: <input type="radio" name="gender" value="Man">
-          Female: <input type="radio" name="gender" value="Vrouw">
-      </tr>
+      
         <td colspan="2"><input type="submit" class="submit" value="Registreren" /></td>
+      </tr>
+      </tr>
+      
+        <td colspan="2"><input type="submit" class="submit" value="Inloggen" /></td>
       </tr>
     </table>
   </form>
