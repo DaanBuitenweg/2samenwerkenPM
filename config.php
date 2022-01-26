@@ -2,9 +2,9 @@
 
 
 $dbhost       = "localhost";
-$dbusername   = "Hardstore";
-$dbpassword   = "dYn]6tcisw6ftlki";
-$dbname     = "world";
+$dbusername   = "Hardstore1";
+$dbpassword   = "lN8jYFEdcOHGQ[*p";
+$dbname     = "hardstore1";
 
 
 

@@ -1,0 +1,75 @@
+* {
+    margin: 0
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("registerbackground3.jpg");
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .inlog-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-style: outset;
+    padding: 20px;
+  }
+  
+  .inlog-form input,
+  .inlog-form select,
+  .inlog-form textarea {
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+  
+  .inlog-form input:focus,
+  .inlog-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(228, 228, 228), 0 0 10px rgb(224, 224, 224);
+  }
+  
+  .inlog-form .submit {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .inlog-form .submit:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .inlog-form .submit {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .inlog-form .submit:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
