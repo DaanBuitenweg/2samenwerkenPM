@@ -8,8 +8,10 @@
     </button>
     <div class="dropdown-content">
       <a href="producten.php">laptop/pc</a>
-      <a href="producten.php">servers</a>
+      <a href="servers.php">servers</a>
     </div>
   </div> 
+  <a href="inlogform.php">inloggen</a>
+  <a href="registratieform.php">registreren</a>
 </div>
 
