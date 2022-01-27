@@ -3,9 +3,8 @@
     <?php
     include_once 'functions.php';
     $subnav = [
-      'SubOne'=>'sub.php',
-      'SubTwo'=>'sub2.php',
-      'SubThree'=>'sub3.php',
+      'laptop/pc'=>'producten.php',
+      'servers'=>'servers.php',
     ];
     echo createlist($subnav, '')
     ?>

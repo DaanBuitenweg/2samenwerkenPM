@@ -66,6 +66,7 @@ input[type=submit]:hover {
 </div>
 
 <?php
+if(isset($_POST["submit"]) ) {
 $naam = $_POST['naam'];
 if (empty($naam)) {
     echo "<br>naam niet ingevuld";
@@ -93,7 +94,7 @@ if (empty($commentaar)) {
 } else {
      echo  "<br>commentaar: $commentaar";
 }
-
+}
 
 
 ?>
@@ -101,5 +102,4 @@ if (empty($commentaar)) {
 
 </body>
 </html>
-    </article>
 <?php include 'footer.php'?>
