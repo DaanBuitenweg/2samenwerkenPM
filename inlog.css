@@ -8,7 +8,9 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url("registerbackground3.jpg");
+    background-image: url("formback2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   
   h1 {
