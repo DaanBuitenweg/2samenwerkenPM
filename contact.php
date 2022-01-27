@@ -67,28 +67,33 @@ input[type=submit]:hover {
 
 <?php
 if(isset($_POST["submit"]) ) {
-$naam = $_POST['naam'];
+
+$naam         = ($_POST['naam']);
+$achternaam   = ($_POST['achternaam']);
+$land         = ($_POST['land']);
+$commentaar   = ($_POST["commentaar"]);
+
 if (empty($naam)) {
     echo "<br>naam niet ingevuld";
 } else {
      echo  "<br>naam: $naam";
 }
 
-$achternaam = $_POST['achternaam'];
+
 if (empty($achternaam)) {
     echo "<br>achternaam niet ingevuld";
 } else {
      echo  "<br>achternaam: $achternaam";
 }
 
-$land = $_POST['land'];
+
 if (empty($land)) {
     echo "<br>land niet ingevuld";
 } else {
      echo  "<br>land: $land";
 }
 
-$commentaar = $_POST["commentaar"];
+
 if (empty($commentaar)) {
     echo "<br>commentaar niet ingevuld";
 } else {
