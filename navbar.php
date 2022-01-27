@@ -13,5 +13,6 @@
   </div> 
   <a href="inlogform.php">inloggen</a>
   <a href="registratieform.php">registreren</a>
+  <a href="uitloggen.php">uitloggen</a>
 </div>
 
